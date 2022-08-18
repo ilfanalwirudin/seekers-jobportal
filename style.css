@@ -68,7 +68,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .search-container:hover > .search-input {
@@ -92,65 +95,111 @@ body {
 /*--------------*/
 /* Accordion FAQ*/
 /*--------------*/
-.panel{
-	background-color: white;
-	border-left: 1px solid whitesmoke;
-	border-right: 1px solid whitesmoke;
-	padding: 0 20px;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-in-out;
+.panel {
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
 }
 
-.sabuk{
-	width: 80%;
-	max-height: 600px;
-	margin: 50px auto;
-	background-color: #277BC0;
-	font-family: 'Barlow Condensed', sans-serif;
+.sabuk {
+  width: 80%;
+  max-height: 600px;
+  margin: 50px auto;
+  background-color: #277bc0;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
-.sabuk h1{
-	color: white;
-	padding: 20px 20px;
-	font-family: ;
+.sabuk h1 {
+  color: white;
+  padding: 20px 20px;
+  font-family: ;
 }
 
-.sabuk h1::selection{
-	color: white;
-	background-color: darkturquoise;
+.sabuk h1::selection {
+  color: white;
+  background-color: darkturquoise;
 }
 
-button.accordion{
-	width: 100%;
-	background-color: whitesmoke;
-	border: none;
-	outline: none;
-	text-align: left;
-	padding: 15px 20px;
-	font-size: 18px;
-	color: #333;
-	cursor: pointer;
-	transition: background-color 0.2s linear;
+button.accordion {
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 
-button.accordion:after{
-	content: '\f150';
-	font-family: 'fontawesome';
-	font-size: 18px;
-	float: right;
+button.accordion:after {
+  content: "\f150";
+  font-family: "fontawesome";
+  font-size: 18px;
+  float: right;
 }
 
-button.accordion.is-open:after{
-	content: '\f151';
+button.accordion.is-open:after {
+  content: "\f151";
 }
 
 button.accordion:hover,
-button.accordion.is-open{
-	background-color: #ddd;
+button.accordion.is-open {
+  background-color: #ddd;
 }
 
 /*-------^------*/
 /* Accordion FAQ*/
 /*-------^------*/
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+  body {
+    margin-bottom: 700px;
+  }
+  .footer {
+    height: 700px;
+  }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+}
