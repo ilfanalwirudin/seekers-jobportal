@@ -203,3 +203,19 @@ footer .form-control {
   color: #d1d2d2;
   padding: 0.7em 1em;
 }
+
+/* @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  Margin bottom by footer height
+  margin-bottom: 300px;
+} */
