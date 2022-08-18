@@ -116,7 +116,7 @@ body {
 .sabuk h1 {
   color: white;
   padding: 20px 20px;
-  font-family: ;
+  /* font-family: ; */
 }
 
 .sabuk h1::selection {
