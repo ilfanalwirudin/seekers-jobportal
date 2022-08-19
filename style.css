@@ -226,6 +226,44 @@ nav a:nth-child(3):hover~.animation{
 .hre{
   float: right;
 }
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.clk {
+  background-color: #55acee;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+
+.fq {
+  padding: 180px 0 211px 0;
+  background-image: url(back.jpg);
+  background-size: cover;
+  color: darkblue;
+  text-align: center;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 @media only screen and (max-width: 800px){
