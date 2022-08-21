@@ -19,7 +19,7 @@ body,
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: rgb(255, 0, 0);
-  background-color: #b2e0df;
+  background-color: var(--greyColor);
 }
 
 li {
@@ -28,7 +28,7 @@ li {
 
 /* header */
 header {
-  background-color: #00acee;
+  background-color: var(--primaryColor);
   color: white;
   height: 90px;
 }
@@ -44,9 +44,9 @@ header {
   padding: 35px 20px;
 }
 
-main {
+/* main {
   height: 200vh;
-}
+} */
 
 .title-wrapper {
   background: url("https://img.freepik.com/free-photo/hr-handshaking-successful-candidate-getting-hired-new-job-closeup_1163-4688.jpg?w=740&t=st=1660923749~exp=1660924349~hmac=712b73e0d6dcc259976cec5be8619645ac7277615f1e43d7f2546103a2102305");
@@ -60,7 +60,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: auto;
 }
 
@@ -68,15 +68,13 @@ main {
   padding: 10px;
 }
 
+.title h1 {
+  color: var(--primaryColor);
+}
+
 /* .lowongan {
   margin-top: 300px;
 } */
-
-footer {
-  height: 250px;
-  width: auto;
-  background-color: rgb(39, 37, 37);
-}
 
 .search-container {
   background: #fff;
@@ -350,6 +348,11 @@ nav a:nth-child(3):hover ~ .animation {
   padding: 0 10px;
 }
 
+.job-detail > h3 {
+  color: var(--primaryColor);
+  font-size: 0.9rem;
+}
+
 .job-detail > h4 {
   color: var(--primaryColor);
   font-size: 0.9rem;
@@ -360,6 +363,7 @@ nav a:nth-child(3):hover ~ .animation {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  color: var(--blackColor);
 }
 
 .job-label {
@@ -405,3 +409,52 @@ nav a:nth-child(3):hover ~ .animation {
 }
 
 /* End of job list  */
+
+/* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 3rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-wrapper h3,
+.footer-wrapper h4 {
+  line-height: 3;
+  color: var(--yellowColor);
+}
+
+.footer-wrapper p {
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.social-media {
+  margin-top: 1rem;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: var(--greyColor);
+  margin-right: 10px;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: var(--greyColor);
+  line-height: 2;
+}
+
+/* End of footer */
