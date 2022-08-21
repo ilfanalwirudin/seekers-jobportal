@@ -14,10 +14,11 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+.h1 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #666;
+  color: rgb(255, 0, 0);
   background-color: #b2e0df;
 }
 
@@ -31,24 +32,24 @@ main {
   height: 200vh;
 }
 
+.title-wrapper {
+  background: url("https://img.freepik.com/free-photo/hr-handshaking-successful-candidate-getting-hired-new-job-closeup_1163-4688.jpg?w=740&t=st=1660923749~exp=1660924349~hmac=712b73e0d6dcc259976cec5be8619645ac7277615f1e43d7f2546103a2102305");
+  padding: 180px 0px 50px 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .center {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 200px;
+  margin-top: 50px;
   width: auto;
 }
 
 .title {
-  padding-bottom: 50px;
-}
-
-.search {
-  background-color: blue;
-  height: 50px;
-  width: 400px;
-  /* position: absolute; */
+  padding: 10px;
 }
 
 /* .lowongan {
@@ -109,14 +110,13 @@ footer {
   width: 80%;
   max-height: 600px;
   margin: 50px auto;
-  background-color: #277bc0;
+  background-color: #1abc9c;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 .sabuk h1 {
   color: white;
   padding: 20px 20px;
-  /* font-f;amily:  */
 }
 
 .sabuk h1::selection {
@@ -233,7 +233,65 @@ nav a:nth-child(3):hover ~ .animation {
 .h {
   color: darkblue;
 }
+
+.hre {
+  float: right;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.clk {
+  background-color: #55acee;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.fq {
+  padding: 180px 0 211px 0;
+  background-image: url(back.jpg);
+  background-size: cover;
+  color: darkblue;
+  text-align: center;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+@media only screen and (max-width: 800px) {
+  .aboutus {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutus {
+    font-size: 14px;
+    padding: 25px;
+    margin: 20px;
+  }
+  .sabuk h1 {
+    font-size: 20px;
+  }
+}
 
 /*-------^------*/
 /* Accordion FAQ*/
@@ -242,7 +300,6 @@ nav a:nth-child(3):hover ~ .animation {
 /* Job list  */
 
 .job-list {
-  margin: 5%;
   padding: 1rem;
   background-color: var(--greyColor);
 }
